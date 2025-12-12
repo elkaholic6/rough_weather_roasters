@@ -7,8 +7,11 @@ import { TestimonialsSection } from "./components/TestimonialsSection";
 import { Footer } from "./components/Footer";
 
 function App() {
-	// Images from Unsplash
-	const coffeeBagImage = "/rough_weather_roasters_bag.png";
+	// Images
+	// Use BASE_URL so local assets work with GitHub Pages subpath
+	const coffeeBagImage = `${
+		import.meta.env.BASE_URL
+	}rough_weather_roasters_bag.png`;
 	const coffeeBeansImage =
 		"https://images.unsplash.com/photo-1553698249-0e3f9263ffa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBiZWFucyUyMGRhcmt8ZW58MXx8fHwxNzY1NTE0MzA1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 	const forestBackground =
